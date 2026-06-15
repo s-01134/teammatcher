@@ -1,8 +1,8 @@
 from rest_framework import generics, status
 from rest_framework.response import Response
 from django.shortcuts import get_object_or_404
-from .models import TeamSet, Team, TeamAssignment
-from .serializers import TeamSetSerializer, TeamSerializer, TeamAssignmentSerializer
+from team_management.models import TeamSet, Team, TeamAssignment
+from team_management.serializers import TeamSetSerializer, TeamSerializer, TeamAssignmentSerializer
 
 
 class TeamSetListCreateView(generics.ListCreateAPIView):
